@@ -33,7 +33,7 @@ Set it in the plugin config directory .env file.
 
 - Herdr >= 0.7.0
 - Linux and macOS: `sh`, `curl`, `jq`
-- Windows (Herdr Windows beta): Windows PowerShell 5.1 or later, which ships with Windows. `curl` and `jq` are not needed.
+- Windows: Windows PowerShell 5.1 or later, which ships with Windows
 
 ## Install
 
@@ -49,7 +49,7 @@ $EDITOR "$config_dir/.env"
 
 ### Windows
 
-Windows support requires Herdr's Windows beta. In PowerShell:
+In PowerShell:
 
 ```powershell
 herdr plugin install horn553/herdr-ntfy
@@ -168,11 +168,10 @@ sh tests/notify_test.sh
 On Windows, run the tests with:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File tests
-otify_test.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File tests\notify_test.ps1
 ```
 
-The Windows tests start a local fake ntfy server, so they need no network access or `curl`/`jq`.
+The Windows tests start a local fake ntfy server, so they need no network access.
 
 ## Marketplace
 
